@@ -1,0 +1,5 @@
+.jumbotron {
+    background-repeat: no-repeat;
+    background-image: url('https://github.com/coryknuth/plotly/blob/b15ce2a130174b3293467222e6ba4282b6982547/images/culture.jpg');
+    background-size: cover;
+  }
