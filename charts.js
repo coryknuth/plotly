@@ -103,6 +103,12 @@ function buildCharts(sample) {
       margin: { t: 30, l: 150 },
       xaxis: { title: "Number of Cultures"},
       yaxis: { title: "Bacteria ID"},
+      plot_bgcolor: "rgb(233, 222, 228)",
+      paper_bgcolor: "rgb(233, 222, 228)",
+      font: {
+        family: 'Raleway',
+        color: '#666967'
+      }
       
     };
     // 10. Use Plotly to plot the data with the layout. 
@@ -130,7 +136,13 @@ function buildCharts(sample) {
     title: 'Bacteria Cultures per Sample',
     margin: { t: 30, l: 150 },
     xaxis: { title: "OTU ID"},
-    hovermode: "closest"
+    hovermode: "closest",
+    plot_bgcolor: "rgb(233, 222, 228)",
+    paper_bgcolor: "rgb(233, 222, 228)",
+    font: {
+      family: 'Raleway',
+      color: '#666967'
+    }
   };
   
 
@@ -147,10 +159,10 @@ function buildCharts(sample) {
       title: { text: "<b>Belly Button Washing Frequency</b><br>Scrubs per Week", font: { size: 32 } },
       gauge: {
         axis: { range: [null, 10], tickwidth: 1, tickcolor: "black" },
-        bar: { color: "black" },
+        bar: { color: "#666967" },
         bgcolor: "white",
         borderwidth: 2,
-        bordercolor: "black",
+        bordercolor: "#666967",
         steps: [
           { range: [0, 2], color: "red" },
           { range: [2, 4], color: "orange" },
@@ -167,7 +179,13 @@ function buildCharts(sample) {
     width: 500,
     height: 400,
     margin: { t: 25, r: 25, l: 25, b: 25 },
-    font: { color: "black", family: "Raleway" }
+    font: { color: "black", family: "Raleway" },
+    plot_bgcolor: "rgb(233, 222, 228)",
+    paper_bgcolor: "rgb(233, 222, 228)",
+    font: {
+      family: 'Raleway',
+      color: '#666967'
+    }
   };
 
   // 6. Use Plotly to plot the gauge data and layout.
