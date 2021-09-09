@@ -109,7 +109,8 @@ function buildCharts(sample) {
     y: sampleValues,
     mode: 'markers',
     marker: {
-      size: sampleValues
+      size: sampleValues,
+      sizemode: 'area'
     }
   }
    
@@ -117,14 +118,14 @@ function buildCharts(sample) {
 
   // 2. Create the layout for the bubble chart.
   var bubbleLayout = {
-    title: 'Marker Size',
-    showlegend: false,
-    height: 600,
-    width: 600
+    title: 'Bacteria Cultures per Sample',
+    margin: { t: 30, l: 150 },
+    xaxis: { title: "OTU ID"},
+    hovermode: "closest"
   };
   
 
 
   // 3. Use Plotly to plot the data with the layout.
-  Plotly.newPlot();
+  Plotly.newPlot("bubble", bubbleData, bubbleLayout);
 };
